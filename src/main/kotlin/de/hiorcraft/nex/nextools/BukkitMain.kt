@@ -1,6 +1,7 @@
 package de.hiorcraft.nex.nextools
 
 import de.hiorcraft.nex.nextools.command.minecraft.clearCommand
+import de.hiorcraft.nex.nextools.command.minecraft.seedCommand
 import de.hiorcraft.nex.nextools.command.testCommand
 import org.bukkit.plugin.java.JavaPlugin
 
@@ -13,6 +14,7 @@ class BukkitMain : JavaPlugin() {
 
         testCommand()
         clearCommand()
+        seedCommand()
 
         logger.info("NexTools Plugin is started")
     }

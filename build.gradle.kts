@@ -8,12 +8,12 @@ dependencies {
     api("dev.slne.surf:surf-database:2.2.1-SNAPSHOT")
 }
 group = "de.hiorcraft.nex"
-version = "1.21.10-1.0.0-SNAPSHOT"
+version = "1.21.10-1.0.0"
 
 surfPaperPluginApi {
-    mainClass("de.hiorcraft.nex.nextools.Nextools")
+    mainClass("de.hiorcraft.nex.nextools.BukkitMain")
     generateLibraryLoader(false)
-    authors.add("Hior")
+    authors.add("HiorCraft")
 
     runServer {
         withSurfApiBukkit()
