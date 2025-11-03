@@ -12,9 +12,11 @@ class BukkitMain : JavaPlugin() {
     override fun onEnable() {
         logger.info("NexTools Plugin is starting.....")
 
+        // Register Commands
         testCommand()
         clearCommand()
         seedCommand()
+
 
         logger.info("NexTools Plugin is started")
     }
