@@ -1,22 +1,16 @@
 package de.hiorcraft.nex.nextools
 
-import de.hiorcraft.nex.nextools.command.minecraft.clearCommand
-import de.hiorcraft.nex.nextools.command.minecraft.seedCommand
-import de.hiorcraft.nex.nextools.command.testCommand
+import com.github.shynixn.mccoroutine.folia.SuspendingJavaPlugin
+import de.hiorcraft.nex.nextools.managern.BukkitCommandManager
 import org.bukkit.plugin.java.JavaPlugin
 
 val plugin get() = JavaPlugin.getPlugin(BukkitMain::class.java)
 
-class BukkitMain : JavaPlugin() {
+class BukkitMain : SuspendingJavaPlugin() {
 
     override fun onEnable() {
         logger.info("NexTools Plugin is starting.....")
-
-        // Register Commands
-        testCommand()
-        clearCommand()
-        seedCommand()
-
+        BukkitCommandManager.registerAll()
 
         logger.info("NexTools Plugin is started")
     }
