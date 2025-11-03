@@ -5,7 +5,8 @@ object PermissionRegistry {
     private const val PREFIX = "nextools"
     private const val COMMAND_PREFIX = "$PREFIX.command"
 
-    const val COMMAND_HEAL = "$COMMAND_PREFIX.heal"
-    const val COMMAND_FEED = "$COMMAND_PREFIX.feed"
-    const val BREAK_BLOCKS = "$PREFIX.breakblocks"
+
+    const val COMMAND_CLEAR = "$COMMAND_PREFIX.clear"
+    const val COMMAND_TEST = "$COMMAND_PREFIX.test"
+
 }
