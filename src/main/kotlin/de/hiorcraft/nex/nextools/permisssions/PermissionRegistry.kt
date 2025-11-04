@@ -10,5 +10,6 @@ object PermissionRegistry {
     const val COMMAND_TEST = "$COMMAND_PREFIX.test"
     const val COMMAND_SEED = "$COMMAND_PREFIX.seed"
     const val COMMAND_LIST = "$COMMAND_PREFIX.list"
+    const val COMMAND_KILL = "$COMMAND_PREFIX.kill"
 
 }
