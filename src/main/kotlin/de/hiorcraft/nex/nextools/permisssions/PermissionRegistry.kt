@@ -7,6 +7,7 @@ object PermissionRegistry {
 
 
     const val COMMAND_CLEAR = "$COMMAND_PREFIX.clear"
+    const val COMMAND_CLEAR_OTHERS= "$COMMAND_PREFIX.clear.others"
     const val COMMAND_TEST = "$COMMAND_PREFIX.test"
     const val COMMAND_SEED = "$COMMAND_PREFIX.seed"
     const val COMMAND_LIST = "$COMMAND_PREFIX.list"
