@@ -15,5 +15,6 @@ object PermissionRegistry {
     const val COMMAND_CORDS = "$COMMAND_PREFIX.cords"
     const val COMMAND_HEALTH = "$COMMAND_PREFIX.health"
     const val COMMAND_HEALTH_OTHERS = "$COMMAND_HEALTH.others"
+    const val COMMAND_INFO = "$COMMAND_PREFIX.info"
 
 }

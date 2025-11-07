@@ -1,6 +1,7 @@
 package de.hiorcraft.nex.nextools.managern
 
 import de.hiorcraft.nex.nextools.command.cordsCommand
+import de.hiorcraft.nex.nextools.command.infoCommand
 import de.hiorcraft.nex.nextools.command.minecraft.clearCommand
 import de.hiorcraft.nex.nextools.command.minecraft.healCommand
 import de.hiorcraft.nex.nextools.command.minecraft.killCommand
@@ -17,6 +18,7 @@ object BukkitCommandManager {
         killCommand()
         cordsCommand()
         healCommand()
+        infoCommand()
 
     }
 
