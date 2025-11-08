@@ -20,5 +20,10 @@ object PermissionRegistry {
     const val COMMAND_HAT_OTHERS = "$COMMAND_PREFIX.hat.others"
     const val COMMAND_FLY = "$COMMAND_PREFIX.fly"
     const val COMMAND_FLY_OTHERS = "$COMMAND_FLY.others"
+    const val COMMAND_SPEED = "$COMMAND_PREFIX.speed"
+    const val COMMAND_SPEED_WALK = "$COMMAND_SPEED.walk"
+    const val COMMAND_SPEED_WALK_OTHERS = "$COMMAND_SPEED_WALK.others"
+    const val COMMAND_SPEED_FLY = "$COMMAND_SPEED.fly"
+    const val COMMAND_SPEED_FLY_OTHERS = "$COMMAND_SPEED_FLY.others"
 
 }
