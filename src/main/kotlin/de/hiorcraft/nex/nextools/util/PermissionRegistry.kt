@@ -1,4 +1,4 @@
-package de.hiorcraft.nex.nextools.permisssions
+package de.hiorcraft.nex.nextools.util
 
 object PermissionRegistry {
 

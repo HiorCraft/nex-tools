@@ -1,9 +1,9 @@
 package de.hiorcraft.nex.nextools.command
 
-import de.hiorcraft.nex.nextools.command.util.appendCommandButton
-import de.hiorcraft.nex.nextools.command.util.appendLinkButton
-import de.hiorcraft.nex.nextools.command.util.appendPrefixedKeyArrowLine
-import de.hiorcraft.nex.nextools.permisssions.PermissionRegistry
+import de.hiorcraft.nex.nextools.util.appendCommandButton
+import de.hiorcraft.nex.nextools.util.appendLinkButton
+import de.hiorcraft.nex.nextools.util.appendPrefixedKeyArrowLine
+import de.hiorcraft.nex.nextools.util.PermissionRegistry
 import dev.jorel.commandapi.kotlindsl.anyExecutor
 import dev.jorel.commandapi.kotlindsl.commandTree
 import dev.jorel.commandapi.kotlindsl.entitySelectorArgumentOnePlayer

@@ -1,7 +1,7 @@
 package de.hiorcraft.nex.nextools
 
 import com.github.shynixn.mccoroutine.folia.SuspendingJavaPlugin
-import de.hiorcraft.nex.nextools.managern.BukkitCommandManager
+import de.hiorcraft.nex.nextools.util.BukkitCommandManager
 import org.bukkit.plugin.java.JavaPlugin
 
 val plugin get() = JavaPlugin.getPlugin(BukkitMain::class.java)

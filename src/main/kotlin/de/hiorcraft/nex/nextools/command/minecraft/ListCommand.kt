@@ -1,6 +1,6 @@
 package de.hiorcraft.nex.nextools.command.minecraft
 
-import de.hiorcraft.nex.nextools.permisssions.PermissionRegistry
+import de.hiorcraft.nex.nextools.util.PermissionRegistry
 import dev.jorel.commandapi.kotlindsl.anyExecutor
 import dev.jorel.commandapi.kotlindsl.commandTree
 import dev.slne.surf.surfapi.core.api.messages.adventure.sendText

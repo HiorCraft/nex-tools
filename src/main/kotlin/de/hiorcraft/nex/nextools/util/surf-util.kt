@@ -1,4 +1,4 @@
-package de.hiorcraft.nex.nextools.command.util
+package de.hiorcraft.nex.nextools.util
 
 import dev.slne.surf.surfapi.core.api.messages.Colors
 import dev.slne.surf.surfapi.core.api.messages.adventure.buildText
