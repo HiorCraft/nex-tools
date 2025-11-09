@@ -2,9 +2,11 @@ package de.hiorcraft.nex.nextools.util
 
 import de.hiorcraft.nex.nextools.command.cordsCommand
 import de.hiorcraft.nex.nextools.command.flyCommand
+import de.hiorcraft.nex.nextools.command.godCommand
 import de.hiorcraft.nex.nextools.command.hatCommand
 import de.hiorcraft.nex.nextools.command.infoCommand
 import de.hiorcraft.nex.nextools.command.minecraft.clearCommand
+import de.hiorcraft.nex.nextools.command.minecraft.gameModeCommand
 import de.hiorcraft.nex.nextools.command.minecraft.healCommand
 import de.hiorcraft.nex.nextools.command.minecraft.killCommand
 import de.hiorcraft.nex.nextools.command.minecraft.listCommand
@@ -25,6 +27,8 @@ object BukkitCommandManager {
         hatCommand()
         flyCommand()
         speedCommand()
+        godCommand()
+        gameModeCommand()
 
     }
 

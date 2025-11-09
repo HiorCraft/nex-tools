@@ -25,5 +25,9 @@ object PermissionRegistry {
     const val COMMAND_SPEED_WALK_OTHERS = "$COMMAND_SPEED_WALK.others"
     const val COMMAND_SPEED_FLY = "$COMMAND_SPEED.fly"
     const val COMMAND_SPEED_FLY_OTHERS = "$COMMAND_SPEED_FLY.others"
+    const val COMMAND_GOD = "$COMMAND_PREFIX.god"
+    const val COMMAND_GOD_OTHERS = "$COMMAND_GOD.others"
+    const val COMMAND_GAMEMODE = "$COMMAND_PREFIX.gamemode"
+    const val COMMAND_GAMEMODE_OTHERS = "$COMMAND_GAMEMODE.others"
 
 }
