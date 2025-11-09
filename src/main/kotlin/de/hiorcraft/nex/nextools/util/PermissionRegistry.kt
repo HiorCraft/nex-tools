@@ -27,7 +27,9 @@ object PermissionRegistry {
     const val COMMAND_SPEED_FLY_OTHERS = "$COMMAND_SPEED_FLY.others"
     const val COMMAND_GOD = "$COMMAND_PREFIX.god"
     const val COMMAND_GOD_OTHERS = "$COMMAND_GOD.others"
-    const val COMMAND_GAMEMODE = "$COMMAND_PREFIX.gamemode"
-    const val COMMAND_GAMEMODE_OTHERS = "$COMMAND_GAMEMODE.others"
+    const val COMMAND_ITEMEDIT = "$COMMAND_PREFIX.itemedit"
+    const val COMMAND_ITEMEDIT_EDIT_NAME = "$COMMAND_ITEMEDIT.editname"
+    const val COMMAND_ITEMEDIT_EDIT_LORE = "$COMMAND_ITEMEDIT.editlore"
+    const val COMMAND_ITEMEDIT_EDIT_ENCHANTMENTS = "$COMMAND_ITEMEDIT.editenchantments"
 
 }
