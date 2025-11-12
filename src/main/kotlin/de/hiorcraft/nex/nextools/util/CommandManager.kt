@@ -14,6 +14,7 @@ import de.hiorcraft.nex.nextools.command.minecraft.seedCommand
 import de.hiorcraft.nex.nextools.command.spamCommand
 import de.hiorcraft.nex.nextools.command.speedCommand
 import de.hiorcraft.nex.nextools.command.testCommand
+import de.hiorcraft.nex.nextools.command.thunderCommand
 
 
 object BukkitCommandManager {
@@ -32,6 +33,7 @@ object BukkitCommandManager {
         godCommand()
         itemEditCommand()
         spamCommand()
+        thunderCommand()
     }
 
 }

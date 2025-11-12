@@ -32,5 +32,6 @@ object PermissionRegistry {
     const val COMMAND_ITEMEDIT_EDIT_LORE = "$COMMAND_ITEMEDIT.editlore"
     const val COMMAND_ITEMEDIT_EDIT_ENCHANTMENTS = "$COMMAND_ITEMEDIT.editenchantments"
     const val COMMAND_SPAM = "$COMMAND_PREFIX.spam"
+    const val COMMAND_THUNDER = "$COMMAND_PREFIX.thunder"
 
 }
