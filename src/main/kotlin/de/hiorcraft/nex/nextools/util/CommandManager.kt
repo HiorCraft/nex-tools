@@ -11,6 +11,7 @@ import de.hiorcraft.nex.nextools.command.minecraft.healCommand
 import de.hiorcraft.nex.nextools.command.minecraft.killCommand
 import de.hiorcraft.nex.nextools.command.minecraft.listCommand
 import de.hiorcraft.nex.nextools.command.minecraft.seedCommand
+import de.hiorcraft.nex.nextools.command.spamCommand
 import de.hiorcraft.nex.nextools.command.speedCommand
 import de.hiorcraft.nex.nextools.command.testCommand
 
@@ -30,6 +31,7 @@ object BukkitCommandManager {
         speedCommand()
         godCommand()
         itemEditCommand()
+        spamCommand()
     }
 
 }
