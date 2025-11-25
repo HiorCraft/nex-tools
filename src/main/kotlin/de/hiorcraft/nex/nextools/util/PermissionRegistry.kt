@@ -34,6 +34,8 @@ object PermissionRegistry {
     const val COMMAND_SPAM = "$COMMAND_PREFIX.spam"
     const val COMMAND_THUNDER = "$COMMAND_PREFIX.thunder"
     const val COMMAND_RESTART = "$COMMAND_PREFIX.restart"
+    const val COMMAND_BAN = "$COMMAND_PREFIX.ban"
+    const val COMMAND_BANIP = "$COMMAND_PREFIX.ban-ip"
 
     const val RESTART_NOTIFY = "$PREFIX.restart.notify"
 

@@ -1,4 +1,0 @@
-name: nextools
-version: '1.0'
-main: de.hiorcraft.nex.nextools.BukkitMain
-api-version: '1.21'

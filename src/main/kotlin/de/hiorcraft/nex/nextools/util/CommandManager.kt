@@ -6,6 +6,8 @@ import de.hiorcraft.nex.nextools.command.godCommand
 import de.hiorcraft.nex.nextools.command.hatCommand
 import de.hiorcraft.nex.nextools.command.infoCommand
 import de.hiorcraft.nex.nextools.command.itemEditCommand
+import de.hiorcraft.nex.nextools.command.minecraft.BanCommand
+import de.hiorcraft.nex.nextools.command.minecraft.BanIpCommand
 import de.hiorcraft.nex.nextools.command.minecraft.clearCommand
 import de.hiorcraft.nex.nextools.command.minecraft.healCommand
 import de.hiorcraft.nex.nextools.command.minecraft.killCommand
@@ -36,6 +38,8 @@ object BukkitCommandManager {
         spamCommand()
         thunderCommand()
         restartCommand()
+        BanCommand()
+        BanIpCommand()
     }
 
 }

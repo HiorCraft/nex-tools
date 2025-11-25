@@ -10,7 +10,7 @@ import dev.jorel.commandapi.kotlindsl.*
 
 
 fun spamCommand() = commandTree("spam") {
-    withPermission(PermissionRegistry.COMMAND_ITEMEDIT)
+    withPermission(PermissionRegistry.COMMAND_SPAM)
     literalArgument("chat") {
         greedyStringArgument("message") {
             anyExecutor { executor, args ->
