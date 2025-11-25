@@ -9,7 +9,6 @@ import dev.jorel.commandapi.kotlindsl.getValue
 import dev.jorel.commandapi.kotlindsl.literalArgument
 import dev.jorel.commandapi.kotlindsl.playerExecutor
 import dev.slne.surf.surfapi.core.api.messages.adventure.sendText
-import io.lettuce.core.SortArgs.Builder.by
 import io.papermc.paper.command.brigadier.argument.ArgumentTypes.player
 import org.bukkit.entity.Player
 
