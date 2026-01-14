@@ -7,6 +7,7 @@ import de.hiorcraft.nex.nextools.util.PermissionRegistry
 import dev.jorel.commandapi.kotlindsl.anyExecutor
 import dev.jorel.commandapi.kotlindsl.commandTree
 import dev.jorel.commandapi.kotlindsl.entitySelectorArgumentOnePlayer
+import dev.jorel.commandapi.kotlindsl.getValue
 import dev.slne.surf.surfapi.core.api.font.toSmallCaps
 import dev.slne.surf.surfapi.core.api.messages.adventure.sendText
 import org.bukkit.attribute.Attribute
@@ -16,11 +17,10 @@ fun infoCommand() = commandTree("info") {
     withPermission(PermissionRegistry.COMMAND_INFO)
     entitySelectorArgumentOnePlayer("player") {
         anyExecutor { executor, args ->
-            val player = args[0] as Player
+            val player: Player by args
 
             val name = player.name
             val uuid = player.uniqueId.toString()
-            val ip = "${player.address.address.hostAddress}:${player.address.port}"
             val host =
                 "${player.virtualHost?.hostName ?: "Unbekannt"}: ${player.virtualHost?.port ?: "Unbekannt"}"
             val client = player.clientBrandName
@@ -42,7 +42,6 @@ fun infoCommand() = commandTree("info") {
 
                 appendPrefixedKeyArrowLine("Name", name)
                 appendPrefixedKeyArrowLine("UUID", uuid)
-                appendPrefixedKeyArrowLine("IP", ip)
                 appendPrefixedKeyArrowLine("Host", host)
                 appendPrefixedKeyArrowLine("Client", client ?: "Unbekannt")
                 appendPrefixedKeyArrowLine("Leben", health)
@@ -60,5 +59,4 @@ fun infoCommand() = commandTree("info") {
             }
         }
     }
-
 }
