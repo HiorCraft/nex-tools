@@ -26,7 +26,7 @@ fun itemEditCommand() =commandTree("itemedit") {
 
                 if (itemInHand.isEmpty) {
                     player.sendText {
-                        appendPrefix()
+                        appendErrorPrefix()
                         error("Du musst ein Item in der Hand halten.")
                     }
                     return@playerExecutor
@@ -42,7 +42,7 @@ fun itemEditCommand() =commandTree("itemedit") {
                 }
 
                 player.sendText {
-                    appendPrefix()
+                    appendSuccessPrefix()
                     success("Der Anzeigename des Items wurde zu ")
                     variableValue(name)
                     success(" geändert.")
@@ -63,7 +63,7 @@ fun itemEditCommand() =commandTree("itemedit") {
 
                     if (itemInHand.isEmpty) {
                         player.sendText {
-                            appendPrefix()
+                            appendErrorPrefix()
                             error("Du musst ein Item in der Hand halten.")
                         }
                         return@playerExecutor
@@ -79,7 +79,7 @@ fun itemEditCommand() =commandTree("itemedit") {
                     }
 
                     player.sendText {
-                        appendPrefix()
+                        appendSuccessPrefix()
                         success("Die Lore-Zeile ")
                         variableValue(line)
                         success(" des Items wurde zu ")
@@ -102,7 +102,7 @@ fun itemEditCommand() =commandTree("itemedit") {
 
                     if (itemInHand.isEmpty) {
                         player.sendText {
-                            appendPrefix()
+                            appendErrorPrefix()
                             error("Du musst ein Item in der Hand halten.")
                         }
                         return@playerExecutor
@@ -113,7 +113,7 @@ fun itemEditCommand() =commandTree("itemedit") {
                     }
 
                     player.sendText {
-                        appendPrefix()
+                        appendSuccessPrefix()
                         success("Der Verzauberung ")
                         variableValue(enchant.key.key)
                         success(" mit der Stufe ")

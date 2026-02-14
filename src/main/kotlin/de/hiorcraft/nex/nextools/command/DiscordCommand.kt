@@ -9,7 +9,7 @@ fun discordCommand() = commandAPICommand("Discord") {
     withPermission(PermissionRegistry.COMMAND_DISCORD)
     playerExecutor { player , args ->
         player.sendText {
-            appendPrefix()
+            appendInfoPrefix()
             info("Unser Discord Server: ")
             variableValue("https://discord.gg/tfqj2hqDFE")
         }

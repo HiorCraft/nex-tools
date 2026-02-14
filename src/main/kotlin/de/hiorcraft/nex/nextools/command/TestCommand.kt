@@ -9,7 +9,7 @@ fun testCommand() = commandAPICommand("test") {
     withPermission(PermissionRegistry.COMMAND_TEST)
     playerExecutor { player , args ->
         player.sendText {
-            appendPrefix()
+            appendInfoPrefix()
             info("Dies ist ein Testbefehl.")
         }
     }

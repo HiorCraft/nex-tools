@@ -15,7 +15,7 @@ fun cordsCommand() = commandTree("cords") {
         val location = "Welt: ${player.world.name}, X: ${player.location.blockX}, Y: ${player.location.blockY}, Z: ${player.location.blockZ}"
 
         player.sendText {
-            appendPrefix()
+            appendInfoPrefix()
             info("Deine aktuellen Koordinaten sind: ")
             variableValue(location)
             clickCopiesToClipboard(location)

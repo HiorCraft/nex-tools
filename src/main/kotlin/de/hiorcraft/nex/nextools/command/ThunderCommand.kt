@@ -26,7 +26,7 @@ fun thunderCommand() = commandTree("thunder") {
             }
 
             executor.sendText {
-                appendPrefix()
+                appendSuccessPrefix()
                 success("Du hast ")
                 variableValue(players.size.toString())
                 success(" Spieler vom Blitz treffen lassen.")

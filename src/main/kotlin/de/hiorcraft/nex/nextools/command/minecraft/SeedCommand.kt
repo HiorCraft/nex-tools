@@ -12,7 +12,7 @@ fun seedCommand() = commandTree("seed") {
     playerExecutor { player, _ ->
         val world = player.world
         player.sendText {
-            appendPrefix()
+            appendSuccessPrefix()
             info("Der Seed der Welt '${world.name}' ist: ${world.seed}.")
             clickCopiesToClipboard(world.seed.toString())
             hoverEvent(buildText {

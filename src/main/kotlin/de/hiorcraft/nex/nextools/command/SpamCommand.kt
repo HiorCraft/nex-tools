@@ -20,7 +20,7 @@ fun spamCommand() = commandTree("spam") {
                 server.broadcast(component)
 
                 executor.sendText {
-                    appendPrefix()
+                    appendSuccessPrefix()
                     success("Die Nachricht wurde an alle Spieler gesendet.")
                 }
             }
@@ -36,7 +36,7 @@ fun spamCommand() = commandTree("spam") {
                 forEachPlayer { it.sendActionBar(component) }
 
                 executor.sendText {
-                    appendPrefix()
+                    appendSuccessPrefix()
                     success("Die Nachricht wurde an alle Spieler gesendet.")
                 }
             }
@@ -70,7 +70,7 @@ fun spamCommand() = commandTree("spam") {
                     }
 
                     executor.sendText {
-                        appendPrefix()
+                        appendSuccessPrefix()
                         success("Die Nachricht wurde an alle Spieler gesendet.")
                     }
                 }

@@ -14,14 +14,14 @@ fun listCommand() = commandTree("list") {
 
         if (onlinePlayers.isEmpty()) {
             executor.sendText {
-                appendPrefix()
+                appendInfoPrefix()
                 info("Es sind keine Spieler online.)")
             }
             return@anyExecutor
         }
 
         executor.sendText {
-            appendPrefix()
+            appendInfoPrefix()
             info("Es sind aktuell ")
             variableValue(onlinePlayers.size)
             info(" von ")

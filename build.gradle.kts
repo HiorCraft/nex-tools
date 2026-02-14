@@ -1,21 +1,12 @@
-import dev.slne.surf.surfapi.gradle.util.withSurfApiBukkit
-
 plugins {
-    id("dev.slne.surf.surfapi.gradle.paper-plugin")
+    id("dev.slne.surf.surfapi.gradle.paper-plugin") version "1.21.11+"
 }
-group = "de.hiorcraft.nex"
-version = findProperty("version") as String
-
 surfPaperPluginApi {
     mainClass("de.hiorcraft.nex.nextools.BukkitMain")
     generateLibraryLoader(false)
-    authors.add("HiorCraft")
 
-    runServer {
-        withSurfApiBukkit()
-    }
+    authors.add("Hiorcraft")
 }
 
-kotlin {
-    jvmToolchain(24)
-}
+version = findProperty("version") as String
+group = "de.hiorcraft.nex.nextools"

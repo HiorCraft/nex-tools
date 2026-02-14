@@ -19,7 +19,6 @@ import de.hiorcraft.nex.nextools.command.spamCommand
 import de.hiorcraft.nex.nextools.command.speedCommand
 import de.hiorcraft.nex.nextools.command.testCommand
 import de.hiorcraft.nex.nextools.command.thunderCommand
-import dev.slne.surf.surfapi.bukkit.api.dialog.Dialog
 
 
 object BukkitCommandManager {
@@ -43,7 +42,6 @@ object BukkitCommandManager {
         BanCommand()
         BanIpCommand()
         discordCommand()
-
     }
 
 }

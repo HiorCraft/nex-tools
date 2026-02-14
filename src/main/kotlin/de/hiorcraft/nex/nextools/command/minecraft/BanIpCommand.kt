@@ -13,7 +13,7 @@ fun BanIpCommand() = commandAPICommand("ban-ip") {
 
     anyExecutor { executor, _ ->
         executor.sendText {
-            appendPrefix()
+            appendErrorPrefix()
             error("Der Ban-Befehl wurde deaktiviert.")
         }
     }
@@ -22,7 +22,7 @@ fun BanIpCommand() = commandAPICommand("ban-ip") {
         anyExecutor { executor, args ->
             val player: Player by args
             executor.sendText {
-                appendPrefix()
+                appendErrorPrefix()
                 error("Der Ban-Befehl wurde deaktiviert.")
             }
         }

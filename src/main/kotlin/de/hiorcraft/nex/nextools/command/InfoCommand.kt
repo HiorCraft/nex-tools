@@ -9,6 +9,7 @@ import dev.jorel.commandapi.kotlindsl.commandTree
 import dev.jorel.commandapi.kotlindsl.entitySelectorArgumentOnePlayer
 import dev.jorel.commandapi.kotlindsl.getValue
 import dev.slne.surf.surfapi.core.api.font.toSmallCaps
+import dev.slne.surf.surfapi.core.api.messages.adventure.appendNewPrefixedLine
 import dev.slne.surf.surfapi.core.api.messages.adventure.sendText
 import org.bukkit.attribute.Attribute
 import org.bukkit.entity.Player
@@ -36,7 +37,7 @@ fun infoCommand() = commandTree("info") {
 
             executor.sendText {
                 appendNewline()
-                appendPrefix()
+                appendInfoPrefix()
                 info("Spielerinformationen für ")
                 variableValue(player.name.toSmallCaps())
 
@@ -49,7 +50,7 @@ fun infoCommand() = commandTree("info") {
                 appendPrefixedKeyArrowLine("Ping", ping)
                 appendPrefixedKeyArrowLine("Standort", location)
 
-                appendNewPrefixedLine {
+                appendNewPrefixedLine() {
                     appendLinkButton("Laby.net Profil", labyProfile)
                     appendSpace()
                     appendLinkButton("NameMC Profil", nameMcProfile)

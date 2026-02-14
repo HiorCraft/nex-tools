@@ -20,7 +20,7 @@ fun clearCommand() = commandTree("clear") {
     playerExecutor { player, _ ->
         if (player.inventory.isEmpty) {
             player.sendText {
-                appendPrefix()
+                appendErrorPrefix()
                 error("Dein Inventar ist bereits leer.")
             }
             return@playerExecutor
@@ -30,7 +30,7 @@ fun clearCommand() = commandTree("clear") {
         player.inventory.clear()
 
         player.sendText {
-            appendPrefix()
+            appendSuccessPrefix()
             success("Dein Inventar wurde geleert.")
         }
 

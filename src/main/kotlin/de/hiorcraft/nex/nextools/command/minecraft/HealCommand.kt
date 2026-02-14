@@ -16,7 +16,7 @@ fun healCommand() = commandTree("heal") {
         player.foodLevel = 20
 
         player.sendText {
-            appendPrefix()
+            appendSuccessPrefix()
             success("Du wurdest geheilt.")
         }
     }
@@ -29,12 +29,12 @@ fun healCommand() = commandTree("heal") {
             player.foodLevel = 20
 
             executor.sendText {
-                appendPrefix()
+                appendSuccessPrefix()
                 success("Du hast ${player.name} geheilt.")
             }
 
             player.sendText {
-                appendPrefix()
+                appendSuccessPrefix()
                 success("Du wurdest geheilt.")
             }
         }

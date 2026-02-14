@@ -17,7 +17,7 @@ fun flyCommand() = commandTree("fly") {
             player.isFlying = false
 
             player.sendText {
-                appendPrefix()
+                appendInfoPrefix()
                 success("Du kannst nun nicht mehr Fliegen.")
             }
         }else {
@@ -25,7 +25,7 @@ fun flyCommand() = commandTree("fly") {
             player.isFlying = true
 
             player.sendText {
-                appendPrefix()
+                appendSuccessPrefix()
                 success("Du kannst nun Fliegen.")
             }
         }

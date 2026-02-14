@@ -15,12 +15,12 @@ fun hatCommand() = commandAPICommand("hat") {
 
         if (itemInHand.type.isAir) {
             player.sendText {
-                appendPrefix()
+                appendSuccessPrefix()
                 success("Du hast deinen Hut entfernt.")
             }
         } else {
             player.sendText {
-                appendPrefix()
+                appendSuccessPrefix()
                 success("Du hast deinen Hut gesetzt.")
             }
         }
@@ -34,22 +34,22 @@ fun hatCommand() = commandAPICommand("hat") {
 
             if (itemInHand.type.isAir) {
                 executor.sendText {
-                    appendPrefix()
+                    appendSuccessPrefix()
                     variableValue(player.name)
                     success("s Hut wurde entfernt.")
                 }
                 player.sendText {
-                    appendPrefix()
+                    appendSuccessPrefix()
                     success("Dir wurde der Hut entfernt.")
                 }
             } else {
                 executor.sendText {
-                    appendPrefix()
+                    appendSuccessPrefix()
                     variableValue(player.name)
                     success("s Hut wurde gesetzt.")
                 }
                 player.sendText {
-                    appendPrefix()
+                    appendSuccessPrefix()
                     success("Dir wurde der Hut gesetzt.")
                 }
 
