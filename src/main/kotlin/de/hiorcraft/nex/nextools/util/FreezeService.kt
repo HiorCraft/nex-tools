@@ -2,6 +2,7 @@ package de.hiorcraft.nex.nextools.util
 
 import com.github.benmanes.caffeine.cache.Caffeine
 import com.github.benmanes.caffeine.cache.Expiry
+import org.bukkit.entity.Player
 import java.time.Duration
 import java.util.*
 
@@ -19,7 +20,7 @@ object FreezeService {
         frozenPlayers.invalidate(uuid)
     }
 
-    fun isFrozen(uuid: UUID): Boolean {
+    fun isFrozen(uuid: Player): Boolean {
         return frozenPlayers.getIfPresent(uuid) != null
     }
 }

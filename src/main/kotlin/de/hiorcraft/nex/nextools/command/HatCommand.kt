@@ -39,8 +39,7 @@ fun hatCommand() = commandAPICommand("hat") {
                     success("s Hut wurde entfernt.")
                 }
                 player.sendText {
-                    appendSuccessPrefix(
-                    success("Dir wurde der Hut entfernt.")
+                    appendSuccessPrefix("Dir wurde der Hut entfernt.")
                 }
             } else {
                 executor.sendText {
