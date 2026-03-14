@@ -37,6 +37,8 @@ object PermissionRegistry {
     const val COMMAND_BAN = "$COMMAND_PREFIX.ban"
     const val COMMAND_BANIP = "$COMMAND_PREFIX.ban-ip"
     const val COMMAND_DISCORD = "$COMMAND_PREFIX.discord"
+    const val COMMAND_FREEZE= "$COMMAND_PREFIX.freeze"
+    const val TELEPORT_RANDOM_COMMAN= "$COMMAND_PREFIX.teleport.random"
 
     const val RESTART_NOTIFY = "$PREFIX.restart.notify"
 
